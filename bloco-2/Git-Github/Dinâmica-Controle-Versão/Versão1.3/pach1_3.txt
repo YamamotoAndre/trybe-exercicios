@@ -1,0 +1,8 @@
+
+
+#1 Linguagem muito popular e adotada pelas principais empresas de tecnologia do mundo.
+#1 Utiliado tanto na interface do usuario, quanto nos processos feitos em back ground
+#2 existem muitas bibliotecas para o javaScrip que te permite uma variedade maior para, conseguir entregar o projeto 
+#3 Constante evoluÃ§Ã£o, principalmente por ter uma comunidade engajada.
+#4 Possui uma comunidade de usuarios ativa, por esse motivo esta sempre sendo atualizado assim tendo mais ferramentas disponiveis.
+#5 Muitas opÃ§Ãµes de bibliotecas e frameworks que vÃ£o maximizar sua produtividade.

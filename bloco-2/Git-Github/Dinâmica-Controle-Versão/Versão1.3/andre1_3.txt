@@ -1,0 +1,3 @@
+#2 existem muitas bibliotecas para o javaScrip que te permite uma variedade maior para, conseguir entregar o projeto 
+#1 Utiliado tanto na interface do usuario, quanto nos processos feitos em back ground
+#4 Possui uma comunidade de usuarios ativa, por esse motivo esta sempre sendo atualizado assim tendo mais ferramentas disponiveis.
