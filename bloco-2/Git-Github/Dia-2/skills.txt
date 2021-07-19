@@ -2,6 +2,9 @@ Internet
 Unix
 Bash
 Git
-Git-Hub
-Html
+Git Hub
+HTML
 CSS
+JavaScript
+DOM
+Web Storage
