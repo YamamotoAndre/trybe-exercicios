@@ -1,0 +1,20 @@
+h1 { 
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+li:hover {
+    background-color: blue;
+}
+li:active{
+    color: azure;   
+}
+
+.listas {
+list-style: none;
+}
