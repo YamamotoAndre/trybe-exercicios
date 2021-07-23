@@ -1,5 +1,0 @@
-> Significado de Aleatório: 
- Que repousa sobre um acontecimento incerto, fortuito.
- Diz-se de uma grandeza que pode tomar certo número de valores, a cada um dos quais está ligada uma probabilidade. 
- 
- Sinônimos de Aleatório: casual, contingente, eventual, fortuito e incerto.

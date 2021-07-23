@@ -1,9 +1,0 @@
-./arquivos_txt.txt
-./bunch_of_things_organizados.txt
-./bunch_of_things.txt
-./countries.txt
-./fortune.txt
-./phrases2.txt
-./phrases.txt
-./skills2.txt
-./top_skills.txt
