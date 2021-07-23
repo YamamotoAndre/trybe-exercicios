@@ -1,0 +1,36 @@
+div:hover{
+border: solid black;
+border-width: 3px;
+}
+
+div:hover:nth-child(3){
+    border: solid blue;
+    border-width:3px;
+    background:rgba(0, 102, 255, 0.311);   
+}
+
+div:hover:nth-child(4){
+    border: solid rgb(3, 253, 24);
+    border-width:3px;
+    background:rgba(42, 250, 0, 0.452);   
+}
+
+div:hover:nth-child(5){
+    border: solid rgb(0, 0, 0);
+    border-width:3px;
+    background:rgba(0, 0, 0, 0.603);
+    color: azure;   
+}
+
+div:hover:nth-child(6){
+    border: solid rgb(0, 26, 255);
+    border-width:3px;
+    background:rgb(55, 0, 255);
+    color: azure;    
+}
+
+div:hover:nth-child(7){
+    border: solid rgb(255, 251, 0);
+    border-width:3px;
+    background:rgba(247, 239, 131, 0.893);   
+}
