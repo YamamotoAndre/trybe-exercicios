@@ -3,6 +3,15 @@ border: solid black;
 border-width: 3px;
 }
 
+div:nth-child(5){
+    height: 60px;
+    font-style: italic;
+    }
+
+div:nth-child(odd){
+    font-style: italic;
+}
+
 div:hover:nth-child(3){
     border: solid blue;
     border-width:3px;
@@ -33,4 +42,8 @@ div:hover:nth-child(7){
     border: solid rgb(255, 251, 0);
     border-width:3px;
     background:rgba(247, 239, 131, 0.893);   
+}
+
+
+
 }
