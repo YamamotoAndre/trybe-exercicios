@@ -1,0 +1,70 @@
+ol {
+background-color: rgba(245, 245, 0, 0.493);
+}
+
+li{
+    font-size: 20px;
+}
+li em{
+    font-weight:bolder;
+}
+
+.lista-ordenada li:nth-child(odd){
+color:green;
+}
+.lista-ordenada li:nth-child(even){
+text-transform: uppercase;
+}
+
+.linguagens li:nth-child(-n+3){
+    color: blue;
+}
+
+.linguagens .java{
+    background-color:rgb(241, 149, 211)
+}
+h1,h2{
+    color: red;
+}
+h1 em,h2 em{
+font-size: 40px;
+border: 1px solid black;
+}
+
+.link li:hover:nth-child(1){
+    color:orange;
+    font-weight:bolder;
+}
+.link li:hover:nth-child(2){
+    color:green;
+    font-weight:bolder;
+}
+.link li:hover:nth-child(3){
+    color:black;
+    font-weight:bolder;
+}
+.link li:hover:nth-child(4){
+    color:yellow;
+    font-weight:bolder;
+}  
+.link li:hover:nth-child(5){
+    color:green;
+    font-weight:bolder;
+}
+
+
+.link1:hover{ 
+    color: orange;
+}
+.link2:hover{ 
+    color: green;
+}
+.link3:hover{ 
+    color: black;
+}
+.link4:hover{ 
+    color: yellow;
+}
+.link5:hover{ 
+    color: green;
+}
