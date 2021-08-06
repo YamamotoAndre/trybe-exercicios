@@ -44,7 +44,7 @@ let x = 35
 let y = 20
 let z = 45
 
-if (x > y) {
+if (x > y && x > z) {
     console.log("o maior numero é " + x)
 } else if (y > z) {
     console.log("o maior numero é " + y)
@@ -130,7 +130,9 @@ console.log("")
 
 let nota = 79;
 
-if (nota >= 90) {
+if (nota>100){
+    console.log("Erro")
+}else if (nota >= 90) {
     console.log("Nota A")
 } else if (nota >= 80) {
     console.log("Nota B")
@@ -140,9 +142,12 @@ if (nota >= 90) {
     console.log("Nota D")
 } else if (nota >= 50) {
     console.log("Nota E")
-} else {
+} else if (nota>=0){
     console.log("Nota F");
+}else {
+    console.log("Erro")
 }
+
 // exercício 8
 console.log("")
 console.log("exercicio 8")
@@ -193,18 +198,18 @@ console.log("")
 console.log("exercicio 10")
 console.log("")
 
-let custoSemImposto=100;
-let venda=150;
+let custoSemImposto = 100;
+let venda = 150;
 
-let impostoCusto=custoSemImposto+(0.2*custoSemImposto);
-let lucro=venda-impostoCusto;
+let impostoCusto = custoSemImposto + (0.2 * custoSemImposto);
+let lucro = venda - impostoCusto;
 
-if (venda<0){
+if (venda < 0) {
     console.log("erro valor de venda negativo")
-}else if(custoSemImposto<0){
+} else if (custoSemImposto < 0) {
     console.log("erro valor do custo negativo")
-}else {
-    console.log("lucro de R$"+lucro)
+} else {
+    console.log("lucro de R$" + lucro)
 }
 
 // exercício 11
@@ -212,36 +217,36 @@ console.log("")
 console.log("exercicio 11")
 console.log("")
 
-let salarioBruto= 5000
+let salarioBruto = 5000
 let inss;
 let ir;
 
 // INSS
-if (salarioBruto<=1556.94){
-    inss=salarioBruto*0.08
-}else if(salarioBruto<=2594.92){
-    inss=salarioBruto*0.09
-}else if(salarioBruto<=5189.82){
-    inss=salarioBruto*0.11
-}else{
-    inss=570.88
+if (salarioBruto <= 1556.94) {
+    inss = salarioBruto * 0.08
+} else if (salarioBruto <= 2594.92) {
+    inss = salarioBruto * 0.09
+} else if (salarioBruto <= 5189.82) {
+    inss = salarioBruto * 0.11
+} else {
+    inss = 570.88
 };
-console.log ("Valor do inss R$"+inss)
+console.log("Valor do inss R$" + inss)
 //IR
-let salarioInss= salarioBruto-inss
+let salarioInss = salarioBruto - inss
 
-if(salarioInss<=1903.98){
-    ir=0
-}else if(salarioInss<=2826.65){
-    ir=((salarioInss*0.075)-142.80)
-}else if (salarioInss<=3751.05){
-    ir=((salarioInss*0.15)-354,80)
-}else if(salarioInss<=4664.68){
-    ir=((salarioInss*0.225)-636.13)
-}else{
-    ir=((salarioInss*0.275)-869.36)
+if (salarioInss <= 1903.98) {
+    ir = 0
+} else if (salarioInss <= 2826.65) {
+    ir = ((salarioInss * 0.075) - 142.80)
+} else if (salarioInss <= 3751.05) {
+    ir = ((salarioInss * 0.15) - 354, 80)
+} else if (salarioInss <= 4664.68) {
+    ir = ((salarioInss * 0.225) - 636.13)
+} else {
+    ir = ((salarioInss * 0.275) - 869.36)
 };
-console.log ("Valor do Imposto de Renda R$"+ir)
-let salarioLiquido=salarioBruto-ir-inss
+console.log("Valor do Imposto de Renda R$" + ir)
+let salarioLiquido = salarioBruto - ir - inss
 
-console.log("O salario liquido é de R$"+salarioLiquido)
+console.log("O salario liquido é de R$" + salarioLiquido)
