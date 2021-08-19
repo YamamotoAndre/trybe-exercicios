@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <label>Nome</label>
+            <input type="text" required placeholder="Nome" maxlength="40" id = "nome">
+            <label>CPF</label>
+            <input type="text" required placeholder="CPF" maxlength="11" id = "CPF"><br>
+            <label>Email</label>
+            <input type="text" required placeholder="Email" maxlength="50" id="Email"><br>
+            <label>Endereço</label>
+            <input type="text" required placeholder="Endereço" maxlength="200" id ="Endereço"><br>
+            <label for="casa">
+                <input required type="radio" id="casa" name="moradia" value="Casa">Casa
+            </label>
+            <label for="Apartamento">
+                <input required type="radio" id="Apartamento" name="moradia" value="apartamento">Apartamento
+            </label><br>
+            <label>Cidade</label>
+            <input type="text" required placeholder="Cidade" maxlength="28" id ="cidade">
+            <select name="estado" id="seletorDeEstado" required>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Resumo do currículo</label><br>
+            <textarea id="Resumo" type="text" required placeholder="Resumo do currículo" maxlength="1000">
+          </textarea><br>
+           <label>Cargo</label><br>
+            <input type="text" required placeholder="Cargo" maxlength="40" id ="Cargo"><br>
+            <label>Descrição</label><br>
+            <input type="text" required placeholder="Descrição do cargo" maxlength="500" id = "Descrição"><br>
+            <label>Data de início</label><br>
+        <input type="text" id ="Data-de-Inicio" required placeholder="dd/mm/aaaa">
+        </fieldset>
+        <button type="submit" id ="botãoDeEnvio">Enviar</button>
+        <button id ="botãoDeLimpeza">Limpar</button>  
+    </form>
+<section id= "registro">
+    <div> </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
