@@ -1,0 +1,36 @@
+<main id="paiDoPai">
+    <section id="pai">
+        <section id="primeiroFilho"></section>
+        <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+        </section>
+        Atenção!
+        <section id="terceiroFilho"></section>
+        <section id="quartoEUltimoFilho"></section>
+    </section>
+    <script>
+       
+        let elementPai = document.querySelector('#pai');
+        let irmãoDoOndeVoceEsta = document.createElement("section")
+        irmãoDoOndeVoceEsta.innerText = "irmão do onde você está"
+        irmãoDoOndeVoceEsta.id = 'irmãoDoOndeVoceEsta';
+        elementPai.appendChild(irmãoDoOndeVoceEsta);
+
+        let ondeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+        let filhoDoElementoOndeVoceEsta = document.createElement('section');
+        filhoDoElementoOndeVoceEsta.innerText = "filho do elemento onde você está";
+        filhoDoElementoOndeVoceEsta.id = 'filhoDoElementoOndeVoceEsta';
+        ondeVoceEsta.appendChild(filhoDoElementoOndeVoceEsta);
+
+        let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+        let filhoDoPrimeiroFilhoDoFilho = document.createElement("section");
+        filhoDoPrimeiroFilhoDoFilho.innerText = "filho do primeiro filho do filho";
+        filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+        primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+        document.getElementsByTagName('section')[4].parentElement.parentElement.parentElement.children[2]
+
+        
+    </script>
+</main>

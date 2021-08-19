@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+
+        let corpo = document.querySelector('body');
+        let elementoCriado1 = document.createElement('h1');
+        elementoCriado1.className = 'title';
+        elementoCriado1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        corpo.appendChild(elementoCriado1);
+
+
+        let elementoCriado2 = document.createElement('main');
+        elementoCriado2.className = "main-content";
+        corpo.appendChild(elementoCriado2);
+
+        let section3 = document.createElement('section');
+        section3.className = "center-content";
+        elementoCriado2.appendChild(section3);
+
+        let p4 = document.createElement('p');
+        p4.innerText = "Exercício de programação do curso da Trybe.";
+        section3.appendChild(p4);
+
+        let section5 = document.createElement('section');
+        section5.className = "left-content";
+        elementoCriado2.appendChild(section5);
+
+        let section6 = document.createElement('section');
+        section6.className = "right-content";
+        elementoCriado2.appendChild(section6);
+
+        let imagem = document.createElement('img');
+        imagem.src = 'https://picsum.photos/200';
+        imagem.className = 'small-image';
+        section5.appendChild(imagem);
+
+        let list = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        for (index = 0; index < list.length; index += 1) {
+            let numeroAdd = list[index];
+
+            let listaAdd = document.createElement('li');
+            listaAdd.innerText = numeroAdd
+            section5.appendChild(listaAdd)
+        }
+
+        let elementoH31 = document.createElement('h3');
+        elementoH31.className = 'description';
+        elementoCriado2.appendChild(elementoH31);
+
+
+        let elementoH32 = document.createElement('h3');
+        elementoH32.className = 'description';
+        elementoCriado2.appendChild(elementoH32);
+
+        let elementoH33 = document.createElement('h3');
+        elementoH33.className = 'description';
+        elementoCriado2.appendChild(elementoH33);
+
+        elementoCriado2.removeChild(section5);
+
+        section6.style.marginRight = 'auto';
+        section3.style.backgroundColor = "green";
+
+        let childRemov1 = section5.children[10];
+        let childRemov2 = section5.children[9];
+
+        let conjutoRemov = [childRemov2, childRemov1];
+
+
+        for (let index = 0; index < conjutoRemov.length; index += 1) {
+
+            let remov = conjutoRemov[index]
+            console.log(remov)
+            let remoção = section5.removeChild(remov)
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<main id="paiDoPai">
+    <section id="pai">
+        <section id="primeiroFilho"></section>
+        <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+        </section>
+        Atenção!
+        <section id="terceiroFilho"></section>
+        <section id="quartoEUltimoFilho"></section>
+    </section>
+    <script>
+
+        let pai = document.querySelector('#pai');
+        let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+        let listaDeElementosSection = document.getElementsByTagName('section');
+
+        let primeiroFilho = document.querySelector('#primeiroFilho');
+        let segundoEUltimoFilhoDoFilho = document.querySelector('#segundoEUltimoFilhoDoFilho');
+        let terceiroFilho = document.querySelector('#terceiroFilho');
+        let quartoEUltimoFilho = document.querySelector('#quartoEUltimoFilho');
+
+        let variaveisPai = [primeiroFilho, terceiroFilho, quartoEUltimoFilho];
+        let variaveisElemento = [segundoEUltimoFilhoDoFilho]
+
+
+        for (let index = 0; index < variaveisPai.length; index += 1) {
+
+            let remov = variaveisPai[index]
+            console.log(remov)
+            let remoção = pai.removeChild(remov)
+        }
+
+        let remoção = elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho)
+
+
+
+    </script>
+</main>
